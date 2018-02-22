@@ -1,0 +1,6 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-node
+
+WORKDIR /usr/src/app
+COPY server.js start.sh ./
+
+CMD ["/bin/bash", "start.sh"]
